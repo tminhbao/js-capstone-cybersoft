@@ -1,0 +1,105 @@
+@import "../utils/variables";
+.product-detail {
+  .container {
+    .product-detail-left {
+      img {
+        padding: 70px 40px;
+        background-color: $bg-color;
+      }
+    }
+    .product-detail-right {
+      .product-name {
+        font-size: 28px;
+        margin-bottom: 2px;
+      }
+      .description {
+        word-spacing: 0.1;
+        color: #140101;
+      }
+      .available-size {
+        font-size: 22px;
+        color: #1ed90e;
+      }
+      span {
+        color: #1e1d1d;
+        background-color: #cccccc;
+        padding: 10px;
+      }
+      .price {
+        margin-top: 20px;
+        color: #fc0303;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .quantity {
+        font-size: 26px;
+        .increase,
+        .decrease {
+          background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+          padding: 10px 16px;
+          color: white;
+          border: none;
+        }
+      }
+      .add-to-cart {
+        background: linear-gradient(
+          270deg,
+          rgba(62, 32, 248, 0.9) 5.14%,
+          #d017ee 89.71%
+        );
+        color: white;
+        border: none;
+        padding: 14px 18px;
+      }
+    }
+  }
+}
+
+.relate-product {
+  background-color: #fffcfc;
+  padding: 20px 0;
+  .container {
+    .card-product {
+      margin: 0 14px;
+      border: 1px solid red;
+      img {
+        width: 100%;
+        padding: 50px 30px;
+        background-color: $bg-color;
+      }
+      .product-name {
+        background-color: $bg-color;
+        font-size: 26px;
+        padding: 0 20px;
+        margin-bottom: 0;
+      }
+      .desc {
+        background-color: $bg-color;
+        font-size: 18px;
+        padding: 0 20px;
+        color: #cbc9c9;
+        margin-bottom: 0;
+      }
+      .button-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        button.buy-now {
+          width: 50%;
+          border: none;
+          background-color: #e1b067;
+          padding: 12px 18px;
+          font-size: 18px;
+        }
+        span.price {
+          width: 50%;
+          background-color: #dedddc;
+          font-size: 22px;
+          font-weight: 600;
+          text-align: center;
+          padding: 9px 0;
+        }
+      }
+    }
+  }
+}
