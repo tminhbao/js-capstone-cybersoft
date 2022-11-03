@@ -1,0 +1,46 @@
+.register-content {
+  .container {
+    form {
+      margin: 0 auto;
+      .form-group {
+        display: flex;
+        align-items: center;
+        input {
+          border: none;
+          border-radius: 0;
+          border-bottom: 2px solid #ae18e2;
+        }
+        input[type="radio"] {
+          display: inline;
+          border: 1px solid #ccc;
+          border-radius: 20px;
+
+          &:checked {
+            background-color: #ae18e2;
+          }
+        }
+        .icon-check.checked {
+          color: green;
+          font-size: 20px;
+          display: none;
+        }
+        .form-check {
+          margin-top: 1%;
+          margin-right: 2%;
+        }
+        h5 {
+          margin-top: 2%;
+          margin-right: 3%;
+        }
+      }
+      button[type="submit"] {
+        border-radius: 0 !important;
+        background-color: #ae18e2 !important;
+        border: none;
+        padding: 4px 30px;
+        display: block;
+        margin-left: 51%;
+      }
+    }
+  }
+}
