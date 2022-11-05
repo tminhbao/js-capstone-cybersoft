@@ -11,7 +11,6 @@ getAllShoeApi = () => {
     console.log(err);
   });
 };
-
 renderProduct = (data) => {
   let html = "";
   // querry shoe to show in list product
