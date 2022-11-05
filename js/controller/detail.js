@@ -1,4 +1,3 @@
-
 renDerShoeRelate = (arrShoe) => {
   let htmlCard = "";
   for (let shoe of arrShoe) {
@@ -7,30 +6,34 @@ renDerShoeRelate = (arrShoe) => {
             <div class="card-product">
                 <img src="${shoe.image}" alt="shoe-img" />
                 <p class="product-name">${shoe.name}</p>
-                <p class="desc">${shoe.description.length>20?shoe.description.substr(0,20):shoe.description}</p>
+                <p class="desc">${
+                  shoe.description.length > 20
+                    ? shoe.description.substr(0, 20)
+                    : shoe.description
+                }</p>
                 <div class="button-wrapper">
-                    <button class="buy-now">Buy now</button>
+                <a href="./detail.html?id=${shoe.id}" class="w-50">Buy now</a>
                     <span class="price">${shoe.price}$</span>
                 </div>
             </div>
         </div>
         `;
   }
-  document.querySelector("#list-shoes").innerHTML=htmlCard;
+  document.querySelector("#list-shoes").innerHTML = htmlCard;
 };
 
 getAPIShoe = (id_shoe) => {
   let promise = axios({
-    url:`https://shop.cyberlearn.vn/api/Product/getbyid?id=${id_shoe}`,
-    method:'GET'
-  })
+    url: `https://shop.cyberlearn.vn/api/Product/getbyid?id=${id_shoe}`,
+    method: "GET",
+  });
   promise.then((shoe) => {
-    renDerShoeDetail(shoe.data.content)
-    renDerShoeRelate(shoe.data.content.relatedProducts)
-  })
-}
+    renDerShoeDetail(shoe.data.content);
+    renDerShoeRelate(shoe.data.content.relatedProducts);
+  });
+};
 
-renDerShoeDetail= (shoe) => {
+renDerShoeDetail = (shoe) => {
   document.querySelector("#shoe-detail").innerHTML = `
   <div class="row align-items-center">
   <div class="col-lg-4">
@@ -64,12 +67,11 @@ renDerShoeDetail= (shoe) => {
   </div>
   </div>
   `;
-}
+};
 
-searchDetailShoe = () =>{
+searchDetailShoe = () => {
   let urlParams = new URLSearchParams(window.location.search);
-  getAPIShoe(urlParams.get('id'));
-}
-
+  getAPIShoe(urlParams.get("id"));
+};
 
 searchDetailShoe();

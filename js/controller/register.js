@@ -11,6 +11,13 @@ document.querySelector("button[type=submit]").onclick = (e) => {
   const phoneInput = document.querySelector("input#phoneInput").value;
   const genderInput = document.querySelector("input[name=genderInput]").value;
 
+  const isValid =
+    (passwordConfirmInput =
+    document.querySelector("input#passwordConfirmInput").onchange =
+      checkValidPassword(passwordInput, passwordConfirmInput));
+
+  if (!isValid) return;
+
   var isTrueSet = genderInput === "true";
 
   axios({
@@ -29,4 +36,12 @@ document.querySelector("button[type=submit]").onclick = (e) => {
       alert(res.data.message);
     })
     .catch((err) => console.log(err.message));
+};
+
+const checkValidPassword = (password, passwordConfirm) => {
+  if (password !== passwordConfirm) {
+    alert("Confirm password không đúng");
+    return false;
+  }
+  return true;
 };
