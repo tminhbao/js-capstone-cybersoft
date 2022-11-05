@@ -1,13 +1,11 @@
 @import "./base/reset";
 @import "./base/typography";
+@import "./base/base";
 
-@import "./components/button";
-
-@import "./layouts/header";
-@import "./layouts/footer";
-
-@import "./pages/index";
+@import "./index/index";
 @import "./pages/detail";
 @import "./pages/register";
 
+@import "./utils/mixin";
+@import "./utils/variable";
 @import "./utils/variables";
