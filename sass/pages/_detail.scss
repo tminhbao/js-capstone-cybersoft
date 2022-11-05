@@ -37,7 +37,15 @@
   }
 }
 .product-detail {
+  margin: 0 20px;
   .container {
+    .col-12 {
+      img.w-100 {
+        width: 80% !important;
+        display: block;
+        margin: 0 auto;
+      }
+    }
     .product-detail-left {
       img {
         padding: 70px 40px;
@@ -46,36 +54,53 @@
     }
     .product-detail-right {
       .product-name {
-        font-size: 28px;
+        font-size: 30px;
         margin-bottom: 2px;
+        font-weight: 300;
+        line-height: 36px;
       }
       .description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
         word-spacing: 0.1;
         color: #140101;
       }
       .available-size {
-        font-size: 22px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
         color: #1ed90e;
       }
       span {
         color: #1e1d1d;
         background-color: #cccccc;
         padding: 10px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
       }
       .price {
         margin-top: 20px;
         color: #fc0303;
-        font-size: 20px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
         font-weight: bold;
       }
       .quantity {
-        font-size: 26px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
         .increase,
         .decrease {
           background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
           padding: 10px 16px;
           color: white;
           border: none;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 36px;
         }
       }
       .add-to-cart {
@@ -87,6 +112,9 @@
         color: white;
         border: none;
         padding: 14px 18px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
       }
     }
   }
@@ -95,10 +123,15 @@
 .relate-product {
   background-color: #fffcfc;
   padding: 20px 0;
+  margin: 20px 0;
   .container {
+    h3 {
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 48px;
+    }
     .card-product {
       margin: 0 14px;
-      border: 1px solid red;
       img {
         width: 100%;
         padding: 50px 30px;
@@ -106,7 +139,9 @@
       }
       .product-name {
         background-color: $bg-color;
-        font-size: 26px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
         padding: 0 20px;
         margin-bottom: 0;
         overflow: hidden;
@@ -114,10 +149,12 @@
       }
       .desc {
         background-color: $bg-color;
-        font-size: 18px;
-        padding: 0 20px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 8px 20px;
         color: #cbc9c9;
-        margin-bottom: 0;
+        margin-bottom: 0px;
       }
       .button-wrapper {
         width: 100%;
@@ -128,35 +165,35 @@
           border: none;
           background-color: #e1b067;
           padding: 12px 18px;
-          font-size: 18px;
+          font-size: 24px;
         }
         span.price {
           width: 50%;
           background-color: #dedddc;
-          font-size: 22px;
+          font-size: 24px;
           font-weight: 600;
           text-align: center;
-          padding: 9px 0;
+          padding: 12px 0;
         }
       }
     }
   }
 }
-.footer{
-  background-color: rgb(236,236,236);
-  .scontainer{
+.footer {
+  background-color: rgb(236, 236, 236);
+  .scontainer {
     padding: 0px 20px;
-    .sub-item{
+    .sub-item {
       margin: 30px 0;
-      border-right: solid 1px rgba(0,0,0,0.1);
-      h3{
+      border-right: solid 1px rgba(0, 0, 0, 0.1);
+      h3 {
         font-size: $fs-2;
         margin-bottom: 16px;
       }
-      p{
+      p {
         font-size: 14px;
         margin-bottom: 0;
-        a{
+        a {
           text-decoration: none;
         }
       }
