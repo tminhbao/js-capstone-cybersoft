@@ -147,6 +147,10 @@
   border: none;
   border-radius: 0;
   border-bottom: 2px solid #ae18e2;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 4px 0;
 }
 .register-content .container form .form-group input[type=radio] {
   display: inline;
@@ -165,6 +169,11 @@
   margin-top: 1%;
   margin-right: 2%;
 }
+.register-content .container form .form-group .form-check-label {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
 .register-content .container form .form-group h5 {
   margin-top: 2%;
   margin-right: 3%;
@@ -176,4 +185,7 @@
   padding: 4px 30px;
   display: block;
   margin-left: 51%;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
 }
