@@ -142,4 +142,101 @@ footer {
 }
 .footer .scontainer .sub-item p a {
   text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+footer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #000;
+}
+.header .scontainer {
+  height: 50px;
+  padding: 0 20px 0 24px;
+}
+.header .scontainer img {
+  width: 116px;
+}
+.header .scontainer .header-item a:nth-child(1) {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+}
+.header .scontainer .header-item a:nth-child(1) img {
+  width: 31px;
+}
+.header .scontainer .header-item a:nth-child(2) {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 16px;
+}
+.header .scontainer .header-item a:nth-child(3) {
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.register-content .container form {
+  margin: 0 auto;
+}
+.register-content .container form .form-group {
+  display: flex;
+  align-items: center;
+}
+.register-content .container form .form-group input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #ae18e2;
+}
+.register-content .container form .form-group input[type=radio] {
+  display: inline;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+.register-content .container form .form-group input[type=radio]:checked {
+  background-color: #ae18e2;
+}
+.register-content .container form .form-group .icon-check.checked {
+  color: green;
+  font-size: 20px;
+  display: none;
+}
+.register-content .container form .form-group .form-check {
+  margin-top: 1%;
+  margin-right: 2%;
+}
+.register-content .container form .form-group h5 {
+  margin-top: 2%;
+  margin-right: 3%;
+}
+.register-content .container form button[type=submit] {
+  border-radius: 0 !important;
+  background-color: #ae18e2 !important;
+  border: none;
+  padding: 4px 30px;
+  display: block;
+  margin-left: 51%;
 }/*# sourceMappingURL=style.css.map */

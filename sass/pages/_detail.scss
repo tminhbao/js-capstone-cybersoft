@@ -1,6 +1,41 @@
 @import "../utils/variables";
 @import "../utils/variable";
 @import "../base/base.scss";
+.header {
+  background-color: $bg-dark;
+  .scontainer {
+    height: 50px;
+    padding: 0 20px 0 24px;
+    img {
+      width: 116px;
+    }
+    .header-item {
+      a:nth-child(1) {
+        img {
+          width: 31px;
+        }
+        text-decoration: none;
+        color: white;
+        font-weight: $fw-3;
+        font-size: $fs-3;
+      }
+      a:nth-child(2) {
+        text-decoration: none;
+        color: white;
+        margin-left: 10px;
+        font-weight: $fw-3;
+        font-size: $fs-1;
+      }
+      a:nth-child(3) {
+        text-decoration: none;
+        color: white;
+        margin-left: 30px;
+        font-weight: $fw-3;
+        font-size: $fs-1;
+      }
+    }
+  }
+}
 .product-detail {
   .container {
     .product-detail-left {
