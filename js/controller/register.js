@@ -11,10 +11,9 @@ document.querySelector("button[type=submit]").onclick = (e) => {
   const phoneInput = document.querySelector("input#phoneInput").value;
   const genderInput = document.querySelector("input[name=genderInput]").value;
 
-  const isValid =
-    (passwordConfirmInput =
-    document.querySelector("input#passwordConfirmInput").onchange =
-      checkValidPassword(passwordInput, passwordConfirmInput));
+  const isValid = (document.querySelector(
+    "input#passwordConfirmInput"
+  ).onchange = checkValidPassword(passwordInput, passwordConfirmInput));
 
   if (!isValid) return;
 
@@ -35,7 +34,10 @@ document.querySelector("button[type=submit]").onclick = (e) => {
       console.log(res.data);
       alert(res.data.message);
     })
-    .catch((err) => console.log(err.message));
+    .catch((err) => {
+      console.log(err.message);
+      alert(err.message + " Đăng ký tài khoản không thành công");
+    });
 };
 
 const checkValidPassword = (password, passwordConfirm) => {
