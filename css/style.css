@@ -8,6 +8,27 @@
   font-family: "Inter", sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+footer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .product-detail .container .product-detail-left img {
   padding: 70px 40px;
   background-color: #f8f8f8;
@@ -70,6 +91,8 @@
   font-size: 26px;
   padding: 0 20px;
   margin-bottom: 0;
+  overflow: hidden;
+  height: 76px;
 }
 .relate-product .container .card-product .desc {
   background-color: #f8f8f8;
@@ -98,3 +121,25 @@
   text-align: center;
   padding: 9px 0;
 }
+
+.footer {
+  background-color: rgb(236, 236, 236);
+}
+.footer .scontainer {
+  padding: 0px 20px;
+}
+.footer .scontainer .sub-item {
+  margin: 30px 0;
+  border-right: solid 1px rgba(0, 0, 0, 0.1);
+}
+.footer .scontainer .sub-item h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.footer .scontainer .sub-item p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.footer .scontainer .sub-item p a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
 
 @mixin styleButton($color , $font-size,$width){
     display: inline-block;
-    padding: 17px 27px 18px 39px;
+    padding: 17px 18px 39px;
     color: $color;
     font-size: $font-size;
     text-decoration: none;

@@ -11,6 +11,7 @@ getAllShoeApi = () => {
     console.log(err);
   });
 };
+
 renderProduct = (data) => {
   let html = "";
   // querry shoe to show in list product
@@ -26,7 +27,7 @@ renderProduct = (data) => {
                   : shoe.description
               }</p>
               <div class="buy-card d-flex">
-                <a href="" class="w-50">Buy now</a>
+                <a href="./detail.html?id=${shoe.id}" class="w-50">Buy now</a>
                 <p class="w-50">${shoe.price}$</p>
               </div>
             </div>
@@ -61,3 +62,5 @@ renderProduct = (data) => {
 };
 
 getAllShoeApi();
+
+
