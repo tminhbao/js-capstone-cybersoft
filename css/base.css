@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+footer {
+  max-width: 1280px;
+  margin: 0 auto;
+}/*# sourceMappingURL=base.css.map */

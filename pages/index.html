@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Font Inner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../css/index.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="header text-white">
+      <div class="scontainer d-flex justify-content-between align-items-center">
+        <img src="../assets/img/image3.png" alt="icon-cybersoft" />
+        <div class="header-item d-flex align-items-center">
+          <a href="">
+            <img src="../assets/img/image8.png" alt="icon-shop" />(1)</a
+          >
+          <a href="">Login</a>
+          <a href="./register.html">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Menu -->
+    <section class="menu">
+      <div class="scontainer">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Men</a>
+                <a class="nav-link" href="#">Woman</a>
+                <a class="nav-link" href="#">Kid</a>
+                <a class="nav-link" href="#">Sport</a>
+                <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Kid</a> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section class="scarousel">
+      <div class="scontainer">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row item-content justify-content-between">
+                <img
+                  src="../assets/img/image4.png"
+                  class="d-block col-lg-6 col-12"
+                  alt="..."
+                />
+                <div class="carousel-content col-lg-6 col-12">
+                  <h3>Product</h3>
+                  <p>Descript</p>
+                  <a href="">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <img aria-hidden="true" src="../assets/img/prev_icon.png"></img>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <img src="../assets/img/next_icon.png" aria-hidden="true"></img>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="overlay">
+          <img src="../assets/img/image6.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- Carousel -->
+
+    <!-- Product -->
+    <section class="product">
+      <div class="scontainer">
+        <h3 class="feature text-center">-Product Feature -</h3>
+        <div class="row list-card" id="list-card"></div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="scontainer">
+        <div class="row">
+          <!-- item1 -->
+          <div class="sub-item col-6 col-lg-4">
+            <h3 class="fw-bold">GET HELP</h3>
+            <p>Contact us</p>
+            <p>Shopping</p>
+            <p>NIKEiD</p>
+            <p>Nike+</p>
+          </div>
+          <!-- item2 -->
+          <div class="sub-item col-6 col-lg-4">
+            <h3 class="fw-bold">ORDERS</h3>
+            <p>Payment options</p>
+            <p>Shipping and delivery</p>
+            <p>Returns</p>
+          </div>
+          <!-- item3 -->
+          <div class="sub-item col-6 col-lg-4">
+            <h3 class="fw-bold">REGISTER</h3>
+            <p>
+              Create one account to manager everything you do with Nike,from
+              your shopping preferences to your Nike+ activity.
+            </p>
+            <p><a href="" class="text-danger">Learn more</a></p>
+          </div>
+          <!-- item4 -->
+          <div class="sub-item col-6 col-lg-4">
+            <h3 class="fw-bold">EMAIL SIGNUP</h3>
+            <p>Be the first to know about new products and special offers.</p>
+            <p><a href="" class="text-danger">Sign up now</a></p>
+          </div>
+          <!-- item5 -->
+          <div class="sub-item col-6 col-lg-4">
+            <h3 class="fw-bold">GIFT CARDS</h3>
+            <p>Give the gift that always fits</p>
+            <p><a href="" class="text-danger">View cards</a></p>
+          </div>
+          <!-- item6 -->
+          <div class="sub-item col-6 col-lg-4">
+            <h3 class="fw-bold">STORES NEAR YOU</h3>
+            <p>Locate a Nike retail store or authorized retailer</p>
+            <p><a href="" class="text-danger">Search</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Slick Carousel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Axios library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+      integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Scrip index -->
+    <script src="../js/controller/index.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".multiple-items").slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>

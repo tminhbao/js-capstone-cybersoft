@@ -1,0 +1,184 @@
+@import "../base/base.scss";
+@import "../utils/_mixin.scss";
+@import "../utils/_variable.scss";
+
+.header {
+  background-color: $bg-dark;
+  .scontainer {
+    height: 50px;
+    padding: 0 20px 0 24px;
+    img {
+      width: 116px;
+    }
+    .header-item {
+      a:nth-child(1) {
+        img {
+          width: 31px;
+        }
+        text-decoration: none;
+        color: white;
+        font-weight: $fw-3;
+        font-size: $fs-3;
+      }
+      a:nth-child(2) {
+        text-decoration: none;
+        color: white;
+        margin-left: 10px;
+        font-weight: $fw-3;
+        font-size: $fs-1;
+      }
+      a:nth-child(3) {
+        text-decoration: none;
+        color: white;
+        margin-left: 30px;
+        font-weight: $fw-3;
+        font-size: $fs-1;
+      }
+    }
+  }
+}
+// .menu {
+//   background: $bg-menu;
+//   height: 50px;
+//   .scontainer {
+//     margin-left: 25px;
+//     .navbar {
+//       .navbar-nav {
+//         .nav-link {
+//           display: block;
+//           margin-right: 39px;
+//         }
+//         .active {
+//           display: block;
+//           position: relative;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.scarousel{
+    margin-top: 5px;
+    height: 530px;
+    position: relative;
+    .scontainer{
+        background-color: $bg-white;
+        .carousel{
+            .carousel-item{
+                .item-content{
+                    img{
+                        max-width: 821px;
+                        padding-left: 86px;
+                    }
+                }
+            }
+            .carousel-control-prev{
+              transform: translateX(-50%);
+              img{
+                transform: translateX(50%);
+                margin-left: 18px;
+              }
+            }
+            .carousel-control-next{
+              transform: translateX(50%);
+              img{
+                transform: translateX(-50%);
+                margin-right: 18px;
+              }
+            }
+
+            .carousel-content{
+              margin-top: 124px;
+              h3{
+                font-size: $fs-4;
+                font-weight: $fw-3;
+                line-height: 48px;
+              }
+              p{
+                font-size: $fs-2;
+                font-weight: $fw-3;
+                line-height: 24px;
+              }
+              a{
+                 @include styleButton($color-white,$fs-2,150px);
+                 margin-top: 20px;
+                 width: 150px;
+                 height: 50px;
+                 line-height: 18px;
+              }
+            }
+
+            .carousel-button{
+              button{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                border: solid 1px rgba(0,0,0,0.3);
+                margin: 0px 23px;
+              }
+            }
+        }
+    
+    }
+    .overlay{
+        img{
+            max-width: 100%;
+        }
+        position: absolute;
+        bottom: 0px; 
+    }
+    
+}
+
+.product{
+  .feature{
+    margin-top: 16px;
+    font-weight: $fw-4;
+    font-size: $fs-4;
+  }
+  .list-card{
+    margin-left:0;
+    margin-right: 0;
+    padding-left: 66px;
+    padding-right: 13px;
+    margin-top: 89px;
+    text-align: center;
+    .scard{
+      @include styleCard;
+      padding: 0px;
+      .buy-card{
+        a{
+          @media (min-width: 992px) and (max-width: 1270px) { 
+              padding: 10px !important;
+           }
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  background-color: rgb(236,236,236);
+  .scontainer{
+    padding: 0px 20px;
+    .sub-item{
+      margin: 30px 0;
+      border-right: solid 1px rgba(0,0,0,0.1);
+      h3{
+        font-size: $fs-2;
+        margin-bottom: 16px;
+      }
+      p{
+        font-size: 14px;
+        margin-bottom: 0;
+        a{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+    
+    
+

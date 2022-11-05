@@ -1,0 +1,78 @@
+@import './variable';
+
+@mixin styleButton($color , $font-size,$width){
+    display: inline-block;
+    padding: 17px 18px 39px;
+    color: $color;
+    font-size: $font-size;
+    text-decoration: none;
+    background-color: #E1B067;
+    max-width: $width;
+    position: relative;
+    z-index: 1;
+}
+
+@mixin  styleCost {
+    width: 50%;
+    @media screen and (max-width) {
+        
+    }
+    padding: 17px 27px 18px 39px;
+    color: #000;
+    background-color: #DEDDDC;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+@mixin styleCard{
+    .card-container{
+        margin-left: 33px;
+        margin-right: 33px;
+        background-color: $bg-light;
+        margin-bottom: 49px;
+        img{
+            max-width: 220px;
+            margin-bottom: 30px;
+            margin-top: 45px;
+        }
+        p:nth-child(2){
+            text-align: left;
+            font-size: 22px;
+            font-weight: $fw-3;
+            line-height: 29px;
+            margin-bottom: 8px;
+            padding-left: 23px;
+        }
+        p:nth-child(3){
+            text-align: left;
+            font-size: $fs-2;
+            font-weight: $fw-3;
+            line-height: 24px;
+            margin-bottom: 13px;
+            padding-left: 23px;
+            color: $color-gray;
+        }
+
+        .buy-card{
+            text-align: left;
+            a{
+                @include styleButton($color-black,$fs-2-1,50%);
+                font-weight: 200;
+                height: 64px;
+            }
+            p{
+                height: 64px;
+                @include styleCost;
+            }
+        }
+    }
+}
+
+@mixin menuButton{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+}
