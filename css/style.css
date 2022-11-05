@@ -8,35 +8,57 @@
   font-family: "Inter", sans-serif;
 }
 
+.product-detail {
+  margin: 0 20px;
+}
+.product-detail .container .col-12 img.w-100 {
+  width: 80% !important;
+  display: block;
+  margin: 0 auto;
+}
 .product-detail .container .product-detail-left img {
   padding: 70px 40px;
   background-color: #f8f8f8;
 }
 .product-detail .container .product-detail-right .product-name {
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 2px;
+  font-weight: 300;
+  line-height: 36px;
 }
 .product-detail .container .product-detail-right .description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   word-spacing: 0.1;
   color: #140101;
 }
 .product-detail .container .product-detail-right .available-size {
-  font-size: 22px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
   color: #1ed90e;
 }
 .product-detail .container .product-detail-right span {
   color: #1e1d1d;
   background-color: #cccccc;
   padding: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
 }
 .product-detail .container .product-detail-right .price {
   margin-top: 20px;
   color: #fc0303;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
   font-weight: bold;
 }
 .product-detail .container .product-detail-right .quantity {
-  font-size: 26px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
 }
 .product-detail .container .product-detail-right .quantity .increase,
 .product-detail .container .product-detail-right .quantity .decrease {
@@ -44,21 +66,32 @@
   padding: 10px 16px;
   color: white;
   border: none;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
 }
 .product-detail .container .product-detail-right .add-to-cart {
   background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #d017ee 89.71%);
   color: white;
   border: none;
   padding: 14px 18px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .relate-product {
   background-color: #fffcfc;
   padding: 20px 0;
+  margin: 20px 0;
+}
+.relate-product .container h3 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
 }
 .relate-product .container .card-product {
   margin: 0 14px;
-  border: 1px solid red;
 }
 .relate-product .container .card-product img {
   width: 100%;
@@ -67,16 +100,20 @@
 }
 .relate-product .container .card-product .product-name {
   background-color: #f8f8f8;
-  font-size: 26px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
   padding: 0 20px;
   margin-bottom: 0;
 }
 .relate-product .container .card-product .desc {
   background-color: #f8f8f8;
-  font-size: 18px;
-  padding: 0 20px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 8px 20px;
   color: #cbc9c9;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 .relate-product .container .card-product .button-wrapper {
   width: 100%;
@@ -88,15 +125,15 @@
   border: none;
   background-color: #e1b067;
   padding: 12px 18px;
-  font-size: 18px;
+  font-size: 24px;
 }
 .relate-product .container .card-product .button-wrapper span.price {
   width: 50%;
   background-color: #dedddc;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   text-align: center;
-  padding: 9px 0;
+  padding: 12px 0;
 }
 
 .register-content .container form {
@@ -110,6 +147,10 @@
   border: none;
   border-radius: 0;
   border-bottom: 2px solid #ae18e2;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 4px 0;
 }
 .register-content .container form .form-group input[type=radio] {
   display: inline;
@@ -128,6 +169,11 @@
   margin-top: 1%;
   margin-right: 2%;
 }
+.register-content .container form .form-group .form-check-label {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
 .register-content .container form .form-group h5 {
   margin-top: 2%;
   margin-right: 3%;
@@ -139,4 +185,7 @@
   padding: 4px 30px;
   display: block;
   margin-left: 51%;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
 }
