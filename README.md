@@ -18,3 +18,6 @@
 ## Installed Packages
 - UI: sass, bootstrap, google fonts
 
+## [Video Demo](https://www.youtube.com/watch?v=96SkbpNOjW4)
+
+## [Link Deploy](https://sonkindit.github.io/Deploy_Code/index.html)
